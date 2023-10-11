@@ -15,3 +15,9 @@ Problems we face:
 there are many problems and issues we have face from resources to implementation but which Tensorflow,Keras and Python version we have to use was biggest one.
 
 ![er1](https://github.com/sagarbee/SignLanguageRecognition/assets/65588552/3816cd99-c258-4cf6-ad23-5db1d16be2ff)
+
+
+output:
+
+https://github.com/sagarbee/SignLanguageRecognition/assets/65588552/3f82e8c3-f124-4d59-a0d8-6266ffcf2dbc
+
