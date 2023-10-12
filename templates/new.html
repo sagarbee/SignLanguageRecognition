@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISLR</title>
+
+	<style>
+        body {
+            background-color: #3776ab; /* Pink */
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        h1 {
+            color: #FFC947; /* Yellow */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type=submit] {
+            background-color: #ffd343; /* Red */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #FFC947; /* Yellow */
+            color: black;
+        }
+
+        /* Optional: Add a drop shadow effect to the image */
+        img {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+
+    <script>
+        // Change the border color of the image when clicked
+        var img = document.getElementsByTagName("img")[0];
+        img.onclick = function() {
+            img.style.border = "5px solid #FFC947"; /* Yellow */
+        }
+    </script>
+
+</head>
+<body>
+	<center> <h1>Live Prediction</h1> </center>
+	<center> <img src="{{ url_for('video_feed') }}" width="640" height="480"/> </center>
+	
+    <form action="/quit" method="POST">
+        <input type="submit" value="Quit" />
+	</form>
+</body>
+</html>
